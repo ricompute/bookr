@@ -1,0 +1,14 @@
+Package: bookr
+Type: Package
+Title: Keeps a Log of Read Books
+Version: 0.1
+Date: 2016-01-11
+Author: Richard C. Lindsey <richard.c.lindsey@ricompute.com>
+Maintainer: Richard C. Lindsey <richard.c.lindsey@ricompute.com>
+Description: Writes a log of books you've read, along with the dates you
+    completed them, to a CSV file.
+URL: https://github.com/ricompute/bookr
+BugReports: https://github.com/ricompute/bookr/issues
+License: GPL (>= 2)
+LazyData: TRUE
+RoxygenNote: 5.0.1
