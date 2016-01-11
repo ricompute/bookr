@@ -11,5 +11,12 @@
 #' blg <- read_booklog()
 
 read_booklog <- function(file = "booklog.csv", ...) {
+
+        # Check to see if booklog.csv exists
+        if (!file.exists(file)) {
+                stop(file, " does not exist!")
+        }
+
+        # Read in booklog.csv
         read.csv(file, stringsAsFactors = FALSE, ...)
 }
