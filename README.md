@@ -1,6 +1,6 @@
 # bookr
 
-This is an R package which keeps a log of the books you've read.
+This is an R package which keeps a log of the books you've read in a file called `booklog.csv`.
 
 # Installation
 

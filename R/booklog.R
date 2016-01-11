@@ -29,9 +29,11 @@ booklog <- function(title, author = NA, date = Sys.Date(), rating = NA, notes = 
         }
 
         # Check to make sure the rating is a number between 1 and 10 (or NA)
-        if (rating < 1 | rating > 10 | (!is.numeric(rating) & !is.na(rating))) {
-                rating <- NA
-                warning("The rating you entered was not a number between 1 and 10. It has been recorded as NA.")
+        if (!is.na(rating)) {
+                if (rating < 1 | rating > 10 | (!is.numeric(rating))) {
+                        rating <- NA
+                        warning("The rating you entered was not a number between 1 and 10. It has been recorded as NA.")
+                }
         }
 
         # Create a data frame of the book data to be written to booklog.csv
