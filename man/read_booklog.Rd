@@ -7,7 +7,7 @@
 read_booklog(file = "booklog.csv", ...)
 }
 \arguments{
-\item{file}{A character string containing the file to be read in, or a file connection. Defaults to booklog.csv.}
+\item{file}{A character string containing the name of the file to be read in, or a file connection. Defaults to booklog.csv.}
 
 \item{...}{Further arguments to be passed to read.csv.}
 }
